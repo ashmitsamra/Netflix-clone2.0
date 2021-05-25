@@ -1,0 +1,42 @@
+.row{
+margin-left: 20px;
+
+}
+.row_posters{
+display : flex;
+overflow-y: hidden;
+overflow-x: scroll;
+padding-top: 5px;
+
+
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.row_image{
+    height: 100px;
+    width:100px;
+    margin-right: 10px;
+    object-fit: contain; 
+    
+    transition: transform 450ms;     
+                           /* whole imsge fit in the boz sixe*/
+}
+
+.row_posterlarge{
+    height: 250px;
+    
+    
+}
+
+.row_image:hover{
+transform : scale(1.08);
+}                                                  /* all the properties will be changes for islarge ie. mentioned one will be overwritten*/
+
+.row_posterlarge:hover{
+transform : scale(1.09);             
+
+}
